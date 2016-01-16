@@ -32,15 +32,17 @@ time, mark, audio, video {
 
 /*UTILITIES*/
 .clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
+  content: " ";
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
 
-.clearfix { display: block; }
+.clearfix { 
+  display: block; 
+}
 
 .error {
   background-color: #f9dede;
@@ -49,7 +51,6 @@ time, mark, audio, video {
   color: #B48279;
   margin-top: 10px;
   padding: 10px;
-
 }
 
 
@@ -62,15 +63,14 @@ body {
 section {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 4px 8px 10px #d7d7d7;  
-  transform: translate(-50%, -50%);
+  box-shadow: 4px 8px 10px #d7d7d7;
   max-height: 400px;
-  /*min-width: 280px;*/
   overflow-y: scroll;
   padding: 1.5em;
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 50%;  
+  transform: translate(-50%, -50%);
   width: 90%;
 }
 
@@ -101,14 +101,14 @@ button {
 
 /*USER PROFILE*/
 .profile {
-margin-top: 10px;
+  margin-top: 10px;
 }
 .avatar, 
 .details {
   float: left;
 }
 .avatar {
-margin-right: 10px;
+  margin-right: 10px;
 }
 h1 {
   font-size: 1.4em;
@@ -121,8 +121,8 @@ h1 {
 h2 {
   border-bottom: 2px solid black;
   font-size: 1em;
-  padding-bottom: 12px;
   margin-top: 20px;
+  padding-bottom: 12px;
 }
 ul {
   list-style: none;
@@ -138,8 +138,8 @@ ul a {
   text-decoration: none;
 }
 ul div {
-  height: 1.2em;
   font-weight: 700;
+  height: 1.2em;
   overflow: hidden;
   position: absolute;
   text-overflow: ellipsis;
@@ -163,6 +163,8 @@ ul a:hover {
   margin-left: 10px;
 }
 
+
+/*MEDIA QUERIES*/
 @media (min-width: 480px) {
   section {
     width: 80%;
