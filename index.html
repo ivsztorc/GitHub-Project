@@ -1,11 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Hello!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Github API Search</title>
+    <script type="text/javascript" src="script/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/649ca7c7c0/GitHub/style.css">
 </head>
-<body>
 
-<h1>Hello!</h1>
+<body>
+  <section>
+    <div class="inner-wrapper">
+      <form>
+        <input type="text" name="ghusername" id="ghusername" placeholder="Search username...">
+        <button type="submit" href="#" id="ghsubmitbtn">Search</button>
+      </form>
+      <div id="ghapidata" class="clearfix"></div>
+    </div>
+  </section>
+
+<script type="text/javascript" src="script/app.js">
+
+</script>
 </body>
 </html>
